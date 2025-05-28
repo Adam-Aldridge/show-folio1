@@ -7,10 +7,11 @@ const PostGrid = ({ posts, onDelete, onEdit }) => {
   if (!posts || posts.length === 0) {
     return (
       <p style={{ textAlign: "center", padding: "20px" }}>
-        No posts yet. Click "Add New Post" to get started!
+        {`No posts yet. Click "Add New Post" to get started!`}
       </p>
     );
   }
+
   return (
     <div className={styles.grid}>
       {posts.map((post) => (
