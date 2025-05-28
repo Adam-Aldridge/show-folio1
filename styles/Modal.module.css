@@ -1,0 +1,98 @@
+/* components/Modal.module.css */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.modalTitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.actions {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.actions button {
+  margin-left: 10px;
+}
+
+.submitButton {
+  background-color: #0070f3;
+  color: white;
+}
+
+.submitButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.cancelButton {
+  background-color: #eee;
+}
+
+.imagePreview {
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+}
+
+.radioLabel {
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+.radioLabel input[type="radio"] {
+  margin-right: 5px;
+  /* Reset some default browser styles for file/text inputs if needed */
+  width: auto;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.currentFileText {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 5px;
+  font-style: italic;
+}
